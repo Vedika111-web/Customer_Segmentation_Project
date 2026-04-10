@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
 # Load dataset
-data = pd.read_csv("customers.csv")
+data = pd.read_csv("01_data/customers.csv")
 
 print("Dataset Loaded Successfully\n")
 
@@ -25,5 +25,5 @@ plt.scatter(X["Income"], X["Recency"], c=data["Cluster"])
 plt.xlabel("Income")
 plt.ylabel("Recency")
 plt.title("Customer Segmentation")
-plt.savefig("segmentation.png")
+plt.savefig("03_outputs/segmentation.png")
 plt.show()
